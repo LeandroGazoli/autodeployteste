@@ -9,12 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v2.3.2
+      uses: actions/checkout@v2
     
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        server: ${{secrets.FTP_SERVER}}
-        username: ${{ secrets.FTP_USER}}
-        password: ${{ secrets.FTP_PASS }}
-        server-dir: /
+        server: ftp.empresasmaggi.com.br
+        username: asdteste@asdteste.maggirentaltruck.com.br
+        password: asdteste@
