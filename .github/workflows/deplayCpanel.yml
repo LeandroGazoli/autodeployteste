@@ -9,11 +9,9 @@ jobs:
     runs-on: centos-latest
     steps:
     - uses: actions/checkout@v2.1.0
-	with:
-	  fetch-depth: 2
     - name: FTP-Deploy-Action
 	uses:SamKirkLand/FTP-Deploy-Action@3.1.1
-	with: 
+	with:
 	  ftp-server: ${{secrets.FTP_SERVER}}
 	  ftp-username: ${{secrets.FTP_USER}}
 	  ftp-password: ${{secrets.FTP_PASS}}
